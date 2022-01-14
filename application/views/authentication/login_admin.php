@@ -1,3 +1,4 @@
+
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <?php $this->load->view('authentication/includes/head.php'); ?>
 <body class="login_admin"<?php if(is_rtl()){ echo ' dir="rtl"'; } ?>>
@@ -14,6 +15,9 @@
       <?php echo validation_errors('<div class="alert alert-danger text-center">', '</div>'); ?>
       <?php hooks()->do_action('after_admin_login_form_start'); ?>
       <div class="form-group">
+        <h1>Cynet Wireless</h1>
+        
+
         <label for="email" class="control-label"><?php echo _l('admin_auth_login_email'); ?></label>
         <input type="email" id="email" name="email" class="form-control" autofocus="1">
       </div>
